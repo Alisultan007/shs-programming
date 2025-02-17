@@ -14,3 +14,11 @@ class Order:
         for item in self._items:
             print(f"{item['name']} - {item['price']} x {item['quantity']}")
         print(f"Итог: {total}")
+
+
+if __name__ == '__main__':
+    order = Order()
+    order.add_product("Apple", 50, 3)
+    order.add_product("Banana", 30, 2)
+    order.checkout()
+
